@@ -35,8 +35,8 @@ import elementos.*
 
  class Garrapatas inherits Pulgas{
     override method atacar(unElemento){
-        super(unElemento)
-        poblacion = poblacion * 1.1
+        unElemento.recibirAtaque(self)
+        poblacion = poblacion * 1.2
         
     }
  }
